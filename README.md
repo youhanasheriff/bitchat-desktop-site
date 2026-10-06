@@ -25,7 +25,9 @@ The static output is in `dist/`. `astro.config.mjs` sets the GitHub Pages URL an
 
 ## Releases and content
 
-Update the version, asset URL, requirements, and signing status together in `src/data/release.ts` when publishing an app release. The page intentionally labels macOS as an **early preview** and Windows/Linux as **coming soon**. The 7.7 MB measurement is the compressed Apple silicon early-preview ZIP download, not the installed app size or a universal binary measurement.
+Update the version, DMG and alternative ZIP asset URLs, download size and checksum, requirements, and signing status together in `src/data/release.ts` when publishing an app release. The page intentionally labels macOS as an **early preview** and Windows/Linux as **coming soon**. The displayed 8.7 MB size is the compressed Apple silicon early-preview DMG download (8,724,815 bytes), not the installed app size or a universal binary measurement. The ZIP download remains available as an alternative.
+
+To install, open the DMG, drag BitChat Desktop into Applications, eject the disk image, and launch the app from Applications.
 
 The release is ad-hoc signed and not notarized. This limitation is shown beside the download with first-open instructions. The minimum macOS version in release metadata is a declared deployment target, not proof of testing on every supported OS.
 
