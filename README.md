@@ -2,7 +2,7 @@
 
 The public landing page for [BitChat Desktop](https://github.com/youhanasheriff/bitchat-desktop), an independent native desktop project by Youhana Sheriff following upstream Bitchat.
 
-A lightweight static Astro site with self-hosted typography, original SVG illustrations, and captures of the actual native macOS interface. No analytics, tracking cookies, signup backend, or runtime font/CDN requests.
+A lightweight static Astro site with self-hosted typography, original SVG illustrations, and captures of the actual native macOS and Linux interfaces. No analytics, tracking cookies, signup backend, or runtime font/CDN requests.
 
 ## Local development
 
@@ -25,7 +25,7 @@ The static output is in `dist/`. `astro.config.mjs` sets the GitHub Pages URL an
 
 ## Releases and content
 
-Update the version, DMG and alternative ZIP asset URLs, download size and checksum, requirements, and signing status together in `src/data/release.ts` when publishing an app release. The page intentionally labels macOS as an **early preview** and Windows/Linux as **coming soon**. The displayed 8.7 MB size is the compressed Apple silicon early-preview DMG download (8,724,815 bytes), not the installed app size or a universal binary measurement. The ZIP download remains available as an alternative.
+Update the version, DMG and alternative ZIP asset URLs, download size and checksum, requirements, and signing status together in `src/data/release.ts` when publishing an app release. The page labels macOS as an **early preview**, Linux as a **discovery preview**, and Windows as **coming soon**. `linuxRelease` contains the separate Linux release tag and Intel/AMD/ARM64 archive URLs. Linux only discovers Bluetooth devices; it does not support messaging. Keep these limits beside its download links. The displayed 8.7 MB size is the compressed Apple silicon early-preview DMG download (8,724,815 bytes), not the installed app size or a universal binary measurement. The ZIP download remains available as an alternative.
 
 To install, open the DMG, drag BitChat Desktop into Applications, eject the disk image, and launch the app from Applications.
 

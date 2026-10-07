@@ -864,13 +864,13 @@ h2 {
 }
 .download-platforms {
   display: grid;
-  grid-template-columns: 1fr 0.82fr;
+  grid-template-columns: 1fr 1fr;
   gap: 46px;
   margin-top: 44px;
   position: relative;
   z-index: 1;
 }
-.mac-download {
+.platform-download {
   border: 1px solid #ffffff26;
   background: #ffffff06;
   border-radius: 10px;
@@ -900,12 +900,12 @@ h2 {
   margin-left: auto;
   white-space: nowrap;
 }
-.mac-download > p:first-of-type {
+.platform-download > p:first-of-type {
   font-size: 10px;
   color: #aac39a;
   margin-top: 12px;
 }
-.mac-download > p:first-of-type span {
+.platform-download > p:first-of-type span {
   margin: 0 6px;
 }
 .download-button {
@@ -1235,7 +1235,7 @@ h2 {
   }
   .download-platforms {
     gap: 25px;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1fr 1fr;
   }
   .platform-heading {
     flex-wrap: wrap;
@@ -1243,7 +1243,7 @@ h2 {
   .early-label {
     margin-left: 0;
   }
-  .mac-download {
+  .platform-download {
     padding: 20px;
   }
   .coming-label {
@@ -1623,10 +1623,10 @@ h2 {
     font-size: 5px;
     letter-spacing: 0.4px;
   }
-  .mac-download {
+  .platform-download {
     padding: 18px;
   }
-  .mac-download > p:first-of-type {
+  .platform-download > p:first-of-type {
     font-size: 9px;
     line-height: 1.7;
   }
@@ -1818,4 +1818,117 @@ figcaption,
 .coming-platforms p,
 .coming-label {
   color: #b2c7a2;
+}
+
+/* The Linux preview shares the page's paper-and-forest palette. */
+.linux-section {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 48px;
+  padding-top: 20px;
+}
+.linux-intro > p:not(.eyebrow) {
+  max-width: 420px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.linux-intro .text-link {
+  margin-top: 24px;
+}
+.linux-intro .linux-scope {
+  padding-left: 16px;
+  border-left: 2px solid #93a877;
+}
+.linux-figure {
+  margin: 0;
+  min-width: 0;
+}
+.linux-figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #25482f26;
+  border-radius: 8px;
+  box-shadow: 0 16px 36px #1b342510;
+}
+.linux-figure figcaption {
+  margin-top: 14px;
+  color: #5b6c57;
+  font-size: 11px;
+}
+.linux-download-scope {
+  margin-top: 15px;
+  color: #e7efd9;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.linux-download .download-button + .download-button {
+  margin-top: 10px;
+  color: #e5eed6;
+  background: transparent;
+  border: 1px solid #b7cc9f70;
+  box-shadow: none;
+}
+.linux-download .download-button + .download-button:hover {
+  background: #ffffff0c;
+}
+.windows-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  margin-top: 28px;
+  border-top: 1px solid #ffffff26;
+}
+.windows-status article {
+  border-bottom: 0;
+  flex: 1;
+  max-width: 470px;
+}
+.windows-status .roadmap-link {
+  margin-top: 0;
+}
+#linux-download,
+#linux-installation {
+  scroll-margin-top: 90px;
+}
+.faq-list code {
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 900px) {
+  .linux-section {
+    gap: 28px;
+  }
+  .linux-intro > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+}
+@media (max-width: 640px) {
+  .linux-section {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+  .linux-intro > p:not(.eyebrow) {
+    max-width: none;
+  }
+  .linux-figure figcaption {
+    font-size: 10px;
+  }
+  .linux-download .platform-heading {
+    flex-wrap: wrap;
+  }
+  .linux-download .early-label {
+    margin-left: 0;
+  }
+  .windows-status {
+    display: block;
+  }
+  .windows-status .roadmap-link {
+    margin-top: 5px;
+  }
 }

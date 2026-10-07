@@ -20,3 +20,7 @@ bash apps/macos/scripts/capture-marketing.sh /absolute/path/to/bitchat-desktop-s
 ```
 
 The opt-in capture test is `ViewSmokeTests/desktopMarketingScreenshots()`. Its fixture is excluded from the shipping app. Other test runs skip capture unless the helper's temporary marker exists.
+
+## Linux discovery preview
+
+`linux-discovery.png` is a 900 × 600 capture of the actual Rust/GTK4 window running on Debian 12 aarch64 in Docker, with GTK 4.8.3, the Cairo renderer, and Xvfb. It shows the ready state, Mainnet selection, and an empty device list. No Bluetooth controller was exposed to the container and no devices or conversations were invented. Captured October 7, 2026 from the implementation in app commit `eb7794730c6abdb39e86582cfb19b87b3fc4c956`; this is UI evidence, not proof of physical Bluetooth interoperability.

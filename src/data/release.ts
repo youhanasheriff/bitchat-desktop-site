@@ -15,3 +15,13 @@ export const release = {
   signing: "Ad-hoc signed. Not notarized by Apple.",
 };
 export const repository = "https://github.com/youhanasheriff/bitchat-desktop";
+
+export const linuxRelease = {
+  version: "0.1.0-preview.1",
+  tag: "linux-v0.1.0-preview.1",
+  notesUrl: "https://github.com/youhanasheriff/bitchat-desktop/releases/tag/linux-v0.1.0-preview.1",
+  x86Url: "https://github.com/youhanasheriff/bitchat-desktop/releases/download/linux-v0.1.0-preview.1/BitChat-Desktop-0.1.0-preview.1-linux-x86_64.tar.gz",
+  armUrl: "https://github.com/youhanasheriff/bitchat-desktop/releases/download/linux-v0.1.0-preview.1/BitChat-Desktop-0.1.0-preview.1-linux-aarch64.tar.gz",
+  requirements: "GTK 4.8+ · glibc 2.36+ · BlueZ",
+  scope: "Bluetooth discovery only. Messaging is not available yet.",
+};
