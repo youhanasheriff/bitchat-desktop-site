@@ -20,8 +20,8 @@ export const linuxRelease = {
   version: "0.1.0-preview.2",
   tag: "linux-v0.1.0-preview.2",
   notesUrl: "https://github.com/youhanasheriff/bitchat-desktop/releases/tag/linux-v0.1.0-preview.2",
-  x86Url: "https://github.com/youhanasheriff/bitchat-desktop/releases/download/linux-v0.1.0-preview.2/bitchat-desktop_0.1.0~preview.2-1_amd64.deb",
-  armUrl: "https://github.com/youhanasheriff/bitchat-desktop/releases/download/linux-v0.1.0-preview.2/bitchat-desktop_0.1.0~preview.2-1_arm64.deb",
+  x86Url: "https://github.com/youhanasheriff/bitchat-desktop/releases/download/linux-v0.1.0-preview.2/bitchat-desktop_0.1.0-preview.2-1_amd64.deb",
+  armUrl: "https://github.com/youhanasheriff/bitchat-desktop/releases/download/linux-v0.1.0-preview.2/bitchat-desktop_0.1.0-preview.2-1_arm64.deb",
   requirements: "Debian 12 / Ubuntu 24.04 · .deb installers",
   scope: "Bluetooth discovery only. Messaging is not available yet.",
 };
