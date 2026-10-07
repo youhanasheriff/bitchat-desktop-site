@@ -43,4 +43,4 @@ Native screenshots live in `public/screenshots/`. Their [provenance](public/scre
 
 ## License
 
-Site code and original assets: [Unlicense](LICENSE). Font licenses and upstream screenshot attribution: [third-party notices](THIRD_PARTY_NOTICES.md).
+Site code and original assets: [MIT License](LICENSE), free to use, modify, and redistribute for personal or commercial purposes under its notice requirements. Previously published versions retain their original Unlicense grants. Font licenses and upstream screenshot attribution: [third-party notices](THIRD_PARTY_NOTICES.md).
