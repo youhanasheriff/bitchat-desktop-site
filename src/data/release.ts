@@ -25,3 +25,12 @@ export const linuxRelease = {
   requirements: "GTK 4.8+ · glibc 2.36+ · BlueZ",
   scope: "Bluetooth discovery only. Messaging is not available yet.",
 };
+
+export const windowsRelease = {
+  version: "0.1.0-preview.1",
+  tag: "windows-v0.1.0-preview.1",
+  notesUrl: "https://github.com/youhanasheriff/bitchat-desktop/releases/tag/windows-v0.1.0-preview.1",
+  url: "https://github.com/youhanasheriff/bitchat-desktop/releases/download/windows-v0.1.0-preview.1/BitChat-Desktop-0.1.0-preview.1-windows-x86_64.zip",
+  requirements: "Intel/AMD 64-bit · Windows 11 recommended",
+  scope: "Bluetooth discovery only. Messaging is not available yet.",
+};

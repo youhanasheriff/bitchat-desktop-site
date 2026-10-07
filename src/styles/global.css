@@ -1874,24 +1874,8 @@ figcaption,
 .linux-download .download-button + .download-button:hover {
   background: #ffffff0c;
 }
-.windows-status {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  position: relative;
-  z-index: 1;
-  margin-top: 28px;
-  border-top: 1px solid #ffffff26;
-}
-.windows-status article {
-  border-bottom: 0;
-  flex: 1;
-  max-width: 470px;
-}
-.windows-status .roadmap-link {
-  margin-top: 0;
-}
+#windows-download,
+#windows-installation,
 #linux-download,
 #linux-installation {
   scroll-margin-top: 90px;
@@ -1925,10 +1909,15 @@ figcaption,
   .linux-download .early-label {
     margin-left: 0;
   }
-  .windows-status {
-    display: block;
-  }
-  .windows-status .roadmap-link {
-    margin-top: 5px;
-  }
+}
+
+/* Keep three readable platform cards within the existing download panel. */
+.download-platforms { gap: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.platform-heading { display: grid; grid-template-columns: 24px 1fr; }
+.platform-heading .early-label { grid-column: 2; justify-self: start; margin-left: 0; }
+.windows-mark { font-size: 28px; line-height: 1; }
+.download-project-link { position: relative; margin-top: 24px; }
+.windows-section { padding-top: 0; }
+@media (max-width: 1100px) {
+  .download-platforms { grid-template-columns: 1fr; max-width: 620px; margin-inline: auto; }
 }
